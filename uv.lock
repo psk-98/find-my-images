@@ -143,6 +143,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "django" },
     { name = "djangorestframework" },
+    { name = "djangorestframework-simplejwt" },
 ]
 
 [package.dev-dependencies]
@@ -159,6 +160,7 @@ dev = [
 requires-dist = [
     { name = "django", specifier = ">=6.0.6" },
     { name = "djangorestframework", specifier = ">=3.17.1" },
+    { name = "djangorestframework-simplejwt", specifier = ">=5.5.1" },
 ]
 
 [package.metadata.requires-dev]
