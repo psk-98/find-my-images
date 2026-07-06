@@ -52,6 +52,18 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+}
+
+# Dev email backend - prints password reset emails in terminal
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Your frontend URL
+FRONTEND_URL = "http://localhost:3000"
+
 ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
