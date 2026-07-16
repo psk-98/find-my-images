@@ -19,3 +19,6 @@ dist/
 build/
 *.egg-info/
 *.whl
+
+docker-compose.yml
+docker-compose.yaml

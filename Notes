@@ -1,0 +1,35 @@
+Notes for stack
+django + drf
+postgre + pgvector
+rabbitmq
+celery
+celery beat
+maybe flower
+docker
+
+
+Notes for scaling
+
+How to gallery uploads
+    Option 1
+        is upload thro django which is fine for now and testing
+        e.g django will validate max size etc as well
+
+    Option 2
+        frontend sends image/s quantity and details to django -> django replies with presign storage links(think s3 or similar)
+        frontend uploads via links
+        frontend sends result of uploads  like, location for iamges, urls etc or any errors
+
+
+How get embedding for face reg
+    Option 1
+        this only works if people have to sign up!!
+        send none uploader user image/s to django and process in background
+        then send an email when done
+        and user can find there images
+        can have a model to match user id, image and potentially gallery for better searching
+
+    Option 2 which is optimized version
+        upload iamge/s to django
+        maybe 5 to 10 secs to do embeddings
+        streaming / paginating images found for gallery on the frontend
