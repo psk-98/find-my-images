@@ -1,0 +1,26 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+.env
+.env.local
+
+# Python
+venv/
+.venv/
+env/
+ENV/
+dist/
+build/
+*.egg-info/
+*.whl
+
+docker-compose.yml
+docker-compose.yaml
+
+.DS_store
